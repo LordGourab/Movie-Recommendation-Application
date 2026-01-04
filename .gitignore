@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.flowbite-react/
+
+.env
+.env.local
+.env.*.local
+
+.vscode/
