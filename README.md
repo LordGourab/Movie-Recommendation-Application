@@ -1,16 +1,49 @@
-# React + Vite
+# 🎬 Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **modern Movie App** built with **React.js**, **Appwrite**, and **TailwindCSS**, designed to let users **browse movies, search for titles, and explore trending content**.  
+The app features a **sleek, responsive design**, dynamic trending logic based on user searches, and smooth UI interactions powered by React and Appwrite.  
 
-Currently, two official plugins are available:
+🚀 **Live Demo:** [Check it out on Netlify](https://movie-suggestion-application.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ⚙️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React.js** – For building reusable UI components and managing app state efficiently.  
+- **Appwrite** – Provides backend services like databases, and storage.  
+- **Tailwind CSS** – Enables rapid, responsive, and modern styling.  
+- **Vite** – Fast build tool for a smooth development experience.  
+- **TMDB API** – Fetches real-time movie data for search and trending functionality.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔋 Key Features
+
+- 🔍 **Search Movies** – Quickly find any movie by title.  
+- 📈 **Trending Section** – Displays the most searched movies dynamically.  
+- 🎨 **Modern UI/UX** – Clean, minimal design for an intuitive experience.  
+- ⚡ **Reusable Architecture** – Modular components and hooks for scalability.  
+- 🌐 **Fully Deployed** – Access the app anytime through Netlify.  
+
+---
+
+## 🖼 Screenshots
+
+**Home / Browse Movies**  
+![Home](screenshots/header.png)  
+
+**Search Movies**  
+![Search](screenshots/search.png)  
+
+**Trending Section**  
+![Trending](screenshots/trendingmovies.png) 
+
+---
+
+## 💡 Highlights
+
+- Trending logic based on **real user searches**, tracked in Appwrite.  
+- Debounced search input minimizes API calls and improves performance.  
+- Designed for **both desktop and mobile** with full responsiveness.  
+- Demonstrates **modern React development** and backend integration with Appwrite.  
+
