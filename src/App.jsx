@@ -16,7 +16,7 @@ const API_OPTIONS = {
 }
 
 const App = () => {
-  const [searchTerm, setSearchterm] = useState('');
+  const [searchTerm, setSearchTerm] = useState('');
 
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -24,13 +24,13 @@ const App = () => {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const fetchMovies = async () => {
+  const fetchMovies = async (query='') => {
     setIsLoading(true);
     setErrorMessage('');
 
     try {
 
-      const endPoint = `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
+      const endPoint = query ? `${API_BASE_URL}/search/movie?query=${encodeURIComponent(query)}` : `${API_BASE_URL}/discover/movie?sort_by=popularity.desc`;
 
       const response = await fetch(endPoint, API_OPTIONS);
 
@@ -58,8 +58,8 @@ const App = () => {
   }
 
   useEffect(() => {
-    fetchMovies();
-  }, []);
+    fetchMovies(searchTerm);
+  }, [searchTerm]);
 
   return (
     <main>
@@ -68,7 +68,7 @@ const App = () => {
         <header>
           <img src="./hero.png" alt="Hero Banner" />
           <h1>Find <span className='text-gradient'>Movies</span> Hassle-Free</h1>
-          <Search searchTerm={searchTerm} setSearchterm={setSearchterm} />
+          <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
         </header>
 
         <section className='all-movies'>
